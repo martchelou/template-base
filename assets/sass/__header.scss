@@ -1,0 +1,31 @@
+body > header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+
+    width: 100%;
+    padding: calc(var(--gap) / 4) 0;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    border-bottom: var(--gap--quarter) solid var(--gray--100);
+    box-shadow: 0 3px 15px var(--gray--500);
+    background-color: var(--white);
+    h1 {
+        margin: 0;
+        a {
+            text-decoration: none;
+            color: var(--black);
+            img {
+                display: inline-block;
+                height: 32px;
+                aspect-ratio: 1/1;
+                vertical-align: middle;                
+            }
+            &:hover {
+                text-decoration: none;
+            };
+        }
+    }    
+}
