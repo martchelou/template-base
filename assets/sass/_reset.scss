@@ -1,0 +1,31 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+*, 
+*:before, 
+*:after {
+    box-sizing: inherit;
+    font-family: sans-serif;
+    // css debug
+    // background-color: rgba(0, 255, 0, 0.3);
+}
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+ol, ul {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block
+}
+a {
+    text-decoration: none;
+    color: var(--blue--900);
+    &:hover {text-decoration: underline;}
+    &.link {color: var(--gray-500);}
+}

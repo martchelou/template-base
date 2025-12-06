@@ -1,0 +1,20 @@
+// base
+@use 'reset';
+@use 'colors';
+@use 'container';
+// utilities
+@use 'aside';
+@use 'box';
+@use 'btn';
+@use 'display';
+@use 'flex';
+@use 'grid';
+@use 'modal';
+@use 'spinner';
+@use 'txt';
+// layout
+@use '_header';
+@use '_main';
+@use '_footer';
+
+// sass --watch --style=compressed ./style.scss:./style.min.css

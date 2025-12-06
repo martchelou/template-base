@@ -1,0 +1,32 @@
+dialog#modal {
+    width: clamp(320px, 96%, 980px);
+    
+    position: relative;
+    padding: var(--gap);
+    padding-top: calc(var(--gap) * 3.5);
+    
+    border: none;
+    border-radius: var(--border-radius--md);
+    box-shadow: 3px 3px 15px var(--black);
+
+    #modal-close-btn 
+    {
+        outline: none;
+        padding: 0;
+        position: absolute;
+        top: var(--gap--half); right: var(--gap--half);
+        background-color: transparent;
+    }
+    #modal-nav 
+    {
+        // mt-3 d-none justify-content-between align-items-center
+        min-width: 250px;
+        
+        // display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-top: calc(var(--gap) * 1.2);
+    }
+}
+::backdrop { background-color: var(--gray--700); opacity: .85; }

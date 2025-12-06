@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- seo -->
+    <meta name="keywords" content="HTML5,CSS3, javascript, template">
+    <meta name="description" content="Projeto de base para criar estilizar e processar uma página web com HTML5, CSS3 e JavaScript.">
+    <!-- links fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- links style -->
+    <link rel="shortcut icon" href="./img/code-slash.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <!-- script -->
+    <script defer src="./js/main.min.js"></script>
+
+    <title>Template</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="d-flex justify--between align--center">
+                <h1 onclick="return getUrl('home.html','result', 'Home')">
+                    <a tabindex="-1" href="#home" class="link">Template</a>
+                </h1>
+                <button id="menu" class="btn p--0" aria-label="Menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                    </svg>
+                    <span class="d-none">Menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <aside>
+        <header>
+            <h1 class="py--2">Menu</h1>
+            <nav class="p--0">
+                <button id="close" class="btn p--0 m--0" aria-label="Fechar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x-lg"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                    </svg>
+                </button>
+            </nav>
+        </header>
+        <nav id="nav-menu">
+            <a href="#link" class="btn">lol</a>
+        </nav>
+    </aside>
+    <main>
+        <div id="result" class="container">
+            <div class="spinner">loading</div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p id="date"><small>0000-00-00</small></p>
+            <nav>
+                <a href="https://github.com/martchelou/" title="github" target="_blank" class="btn btn--icon btn--sm text--dark" aria-label="github">
+                    <img src="./img/github.svg" alt="github" width="16" height="16">
+                </a>
+            </nav>
+        </div>
+    </footer>
+    <dialog id="modal">
+        <button id="modal-close-btn" class="btn" aria-label="fechar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg"
+                viewBox="0 0 16 16">
+                <path
+                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+            </svg>
+        </button>
+        <div id="modal-body">
+            <div class="d-block mx-auto border-1 spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>        
+    </dialog>
+</body>
+</html>

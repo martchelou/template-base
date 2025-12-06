@@ -1,0 +1,165 @@
+.btn {
+    position: relative;
+    padding: .4rem .6rem;    
+    
+    display: inline-flex !important;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    
+    border: none !important;
+    border-radius: var(--border-radius--sm);
+    background-color: transparent;
+    cursor: pointer;
+
+    &[disabled] {
+        cursor: not-allowed;
+        color: var(--gray--500);
+        border: 1px solid var(--gray--400) !important;
+        background-color: var(--gray--200);
+        &:hover {
+            color: var(--gray--600);
+            background-color: var(--gray--300);
+        }
+    }
+    &:hover {
+        color: var(--gray--400);
+    }
+    &--icon { aspect-ratio: 1/1; }
+    &--full {
+        width: 100%;
+        height: auto;
+    }
+    // sizes
+    &--sm {
+        padding: .2rem .4rem;
+        font-size: .8rem;
+        font-variant: small-caps;
+        text-transform: lowercase;
+    }
+    &--md {
+        padding: .4rem .6rem;
+    }
+    &--lg {
+        padding: .6rem .8rem;
+        font-size: 1.1rem;
+    }
+    &--xl {
+        padding: .8rem 1.2rem;
+        font-size: 1.2rem;
+    }
+    // colors
+    &--info {
+        color: var(--black);
+        background-color: var(--blue--50);
+        &:hover {
+            background-color: var(--blue--100);
+        }
+        &.active {
+            background-color: var(--blue--200);
+        }
+    }
+    &--primary {
+        color: var(--white);
+        background-color: var(--blue--500);
+        &:hover {
+            background-color: var(--blue--600);
+        }
+        &.active {
+            background-color: var(--blue--700);
+        }
+    }
+    &--secondary {
+        color: var(--blue--50);
+        background-color: var(--blue--800);
+        &:hover {
+            background-color: var(--blue--900);
+        }
+        &.active {
+            background-color: var(--black);
+        }
+    }
+    &--warning {
+        color: var(--white);
+        background-color: var(--orange--600);
+        &:hover {
+            background-color: var(--orange--700);
+        }
+        &.active {
+            background-color: var(--orange--800);
+        }
+    }
+    &--danger {
+        color: var(--white);
+        background-color: var(--red--600);
+        &:hover {
+            background-color: var(--red--700);
+        }
+        &.active {
+            background-color: var(--red--800);
+        }
+    }
+    &--success {
+        color: var(--white);
+        background-color: var(--green--600);
+        &:hover {
+            background-color: var(--green--700);
+        }
+        &.active {
+            background-color: var(--green--800);
+        }
+    }
+    &--dark {
+        color: var(--gray--300);
+        background-color: var(--gray--800);
+        &:hover {
+            background-color: var(--gray--900);
+        }
+        &.active {
+            background-color: var(--black);
+        }
+    }
+    &--black {
+        color: var(--white);
+        background-color: var(--black);
+        &:hover {
+            color: var(--gray--500);
+            background-color: var(--black);
+        }
+    }
+    &--white {
+        color: var(--black);
+        background-color: var(--white);
+        &:hover {
+            color: var(--gray--500);
+            background-color: var(--white);
+        }
+    }
+    // style TODO Tests
+    .rounded__pill--start {
+        border-top-left-radius: var(--circle);
+        border-bottom-left-radius: var(--circle) ;
+    } 
+    .rounded__pill--end {
+        border-top-right-radius: var(--circle);
+        border-bottom-right-radius: var(--circle);
+    }
+    .rounded--sm { border-radius: var(--border-radius--sm) !important;}
+    .rounded--md { border-radius: var(--border-radius--md) !important;}
+    .rounded--lg { border-radius: var(--border-radius--lg) !important;}
+}
+.btn--group .btn {
+    border: none;
+    border-radius: unset;
+    margin-right: -3px;
+    margin-left: -3px;
+    
+    &:first-child {
+        border-top-left-radius: var(--border-radius--md);
+        border-bottom-left-radius: var(--border-radius--md);
+    }
+    &:last-child {        
+        border-top-right-radius: var(--border-radius--md);
+        border-bottom-right-radius: var(--border-radius--md);
+    }
+}
