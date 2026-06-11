@@ -1,0 +1,49 @@
+// Import font
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+// defaults
+h1,h2,h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+}
+ul,ol {
+    margin-bottom: var(--gap);
+    li {
+        font-family: "Open Sans", sans-serif;
+        margin-bottom: var(--gap);
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+p {
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 1rem;
+    em, i {font-style: italic;}
+    strong, b {font-weight: bold;}
+    del {text-decoration: line-through;}
+    u {text-decoration: underline;}    
+    big, .big {font-size: 1.3rem;}
+    small, .small {font-size: .75rem;}
+    &.lead {font-size: 1.5rem;}
+    &:last-child {margin-bottom: 0;}
+}
+// styles
+.text--center {text-align: center;}
+.text--left {text-align: left;}
+.text--right {text-align: right;}
+.text--justify {text-align: justify;}
+.text--uppercase {text-transform: uppercase;}
+.text--lowercase {text-transform: lowercase;}
+.text--capitalize {text-transform: capitalize;}
+.text--small-caps {text-transform: small-caps;}
+// colors
+.text--dark { color: var(--gray--600);}
+.text--light { color: var(--gray--100);}
+.text--info { color: var(--blue--300);}
+.text--primary { color: var(--blue--500);}
+.text--secondary { color: var(--blue--800);}
+.text--warning { color: var(--orange--600);}
+.text--danger { color: var(--red--600);}
+.text--success { color: var(--green--600);}
+.text--black { color: var(--black);}
+.text--white { color: var(--white);}

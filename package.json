@@ -1,0 +1,14 @@
+{
+  "name": "template-base-dev",
+  "version": "1.7.1/69",
+  "description": "Projeto de base para criar estilizar e processar uma página web com HTML5, CSS3 e JavaScript.",
+  "main": "public/index.html",
+  "type": "module",
+  "scripts": {
+    "dev:js":"node build.js",
+    "dev:css": "sass --watch --style=compressed ./assets/sass/index.scss:./public/css/style.min.css"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.0"
+  }
+}
