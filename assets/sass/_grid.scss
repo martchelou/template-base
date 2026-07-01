@@ -1,0 +1,34 @@
+.grid {
+    display: grid;
+    gap: var(--gap);
+    .grid__item {
+        background-color: var(--gray--100);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &.grid--center {
+        min-height: 85dvh;
+        place-items: center;
+    }
+}
+.grid__gap--0 { gap: 0; }
+.grid__gap--half { gap: calc(var(--gap) / 2); }
+.grid__gap--quarter { gap: calc(var(--gap) / 4); }
+.grid__gap--2 { gap: calc(var(--gap) * 2); }
+
+// cols by 12 grid elements
+// .grid__col--n
+@for $i from 1 through 12
+{    
+   .grid__col--#{$i} 
+   {
+        grid-column: 1fr;
+        // Small devices (landscape phones, 576px and up)
+        @media (min-width: 576px) 
+        {
+            // column-count: $i; // tests for fake monsory cols
+            grid-template-columns: repeat($i,1fr);
+        } 
+   }
+}
