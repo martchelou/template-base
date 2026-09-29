@@ -1,0 +1,26 @@
+body >footer {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+
+    background-color: var(--gray--200);
+    padding: calc(var(--gap) / 4) 0;
+
+    box-shadow: 0 -3px 15px var(--gray--500);
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;        
+        p {
+            margin: 0;
+            font-size: small;
+        }
+        nav .btn {
+            img {
+                height: 18px;
+                width: auto;
+                vertical-align: middle;            
+            }
+        }
+    }    
+}
