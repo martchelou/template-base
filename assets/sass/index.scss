@@ -1,0 +1,15 @@
+// bootstrap
+@use '../../node_modules/bootstrap/scss/bootstrap';
+// base
+@use 'colors';
+// utilities
+@use 'aside';
+@use 'grid';
+@use 'modal';
+@use 'spinner';
+// @use 'view-transitions';
+
+// layout
+@use 'layout';
+
+// sass --watch --style=compressed ./style.scss:./style.min.css

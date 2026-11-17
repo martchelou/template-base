@@ -1,0 +1,7 @@
+node_modules
+package-lock.json
+*.map
+assets/sass/style.min.css
+.vscode
+*.bkp
+tmp
